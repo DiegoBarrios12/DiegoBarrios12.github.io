@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NuevaRegistraApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #007BFF;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+    }
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    .description, .technical-info {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .images-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .images-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .download-section {
+      text-align: center;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RegistraApp</h1>
+  </header>
+  <main>
+    <!-- Descripción de la Aplicación -->
+    <section class="section">
+      <h2>Descripción</h2>
+      <div class="description">
+        <p>
+          NuevaRegistraApp es una aplicación diseñada para escanear y registrar tu asistencia utilizando un codigo QR, permitiendo la gestión de información en tiempo real.
+        </p>
+      </div>
+    </section>
+
+    <!-- Ficha Técnica -->
+    <section class="section">
+      <h2>Ficha Técnica</h2>
+      <div class="technical-info">
+        <p><strong>Nombre del Proyecto:</strong> NuevaRegistraApp</p>
+        <p><strong>Tecnología Base:</strong> Ionic Framework con Capacitor</p>
+        <p><strong>Plataforma de Destino:</strong> Android</p>
+        <p><strong>Propósito:</strong> Escaneo y registro de códigos de barras o QR para gestionar información en tiempo real.</p>
+        <h3>Arquitectura de la Aplicación</h3>
+        <ul>
+          <li><strong>Frontend:</strong></li>
+          <ul>
+            <li>Framework: Ionic (Angular)</li>
+            <li>Lenguajes: TypeScript, HTML5, SCSS/CSS</li>
+            <li>Diseño UI/UX: Basado en Material Design, responsivo para diferentes tamaños de pantalla.</li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Imágenes de la Aplicación -->
+    <section class="section">
+      <h2>Galería de la Aplicación</h2>
+      <div class="images-container">
+        <!-- Aquí se colocan las imágenes de la app -->
+        <img src="img/img registraap para la entrega/img registraap.png" alt="Pantalla 1 de la App">
+        <img src="img/img registraap para la entrega/registro de usuario nueva registraap.png" alt="Pantalla 2 de la App">
+        <img src="img/img registraap para la entrega/recuperar contraseña registraap.png" alt="Pantalla 3 de la App">
+        <img src="img/img registraap para la entrega/menu registraap.png" alt="Pantalla 4 de la App">
+        <img src="img/img registraap para la entrega/perfil registraapp.png" alt="Pantalla 5 de la App">
+        <img src="img/img registraap para la entrega/registro de asistencia.png" alt="Pantalla 6 de la App">
+      </div>
+    </section>
+
+    <!-- Descarga de la Aplicación -->
+    <section class="download-section">
+      <h2>Descargar la Aplicación</h2>
+      <p>Haz clic en el botón para descargar el archivo APK de NuevaRegistraApp:</p>
+      <a href="nueva-registraap-apk/nueva_Registraapp.apk" class="button" download="NuevaRegistraApp.apk">Descargar APK</a>
+    </section>
+  </main>
+</body>
+</html>
+
+
