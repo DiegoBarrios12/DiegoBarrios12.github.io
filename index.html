@@ -12,7 +12,7 @@
       box-sizing: border-box;
     }
     header {
-      background-color: #007BFF;
+      background-color: #9705c0;
       color: #fff;
       text-align: center;
       padding: 15px 10px;
@@ -55,7 +55,7 @@
       margin-top: 10px;
       font-size: 16px;
       color: #fff;
-      background-color: #007BFF;
+      background-color: #5d0f72;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -88,7 +88,7 @@
         <p><strong>Nombre del Proyecto:</strong> NuevaRegistraApp</p>
         <p><strong>Tecnología Base:</strong> Ionic Framework con Capacitor</p>
         <p><strong>Plataforma de Destino:</strong> Android</p>
-        <p><strong>Propósito:</strong> Escaneo y registro de códigos de barras o QR para gestionar información en tiempo real.</p>
+        <p><strong>Propósito:</strong> Escaneo y registro de códigos  QR para gestionar información en tiempo real.</p>
         <h3>Arquitectura de la Aplicación</h3>
         <ul>
           <li><strong>Frontend:</strong></li>
@@ -114,14 +114,36 @@
         <img src="img/img registraap para la entrega/registro de asistencia.png" alt="Pantalla 6 de la App">
       </div>
     </section>
-
-    <!-- Descarga de la Aplicación -->
     <section class="download-section">
       <h2>Descargar la Aplicación</h2>
-      <p>Haz clic en el botón para descargar el archivo APK de NuevaRegistraApp:</p>
+      <p> usa el código QR para descargar tu apk:</p>
       <a href="nueva-registraap-apk/nueva_Registraapp.apk" class="button" download="NuevaRegistraApp.apk">Descargar APK</a>
+      <div id="qr-container"  class="images-container"> 
+        <p>Escanea el código QR con tu dispositivo móvil:</p>
+        <img src="img/img registraap para la entrega/qrcode_149751128_a5d476ece54633acaa8c4e5f5b5f1bba.png" alt="Código QR para descargar el APK">
+      </div>
     </section>
+    <!-- Descarga de la Aplicación -->
   </main>
+  <script>
+    // Detectar dispositivo
+    function isMobileDevice() {
+      return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
+    // Mostrar botón o código QR
+    document.addEventListener('DOMContentLoaded', () => {
+      const downloadButton = document.getElementById('download-button');
+      const qrContainer = document.getElementById('images-container');
+      
+      if (isMobileDevice()) {
+        qrContainer.style.display = 'none'; // Ocultar QR si es móvil
+      } else {
+        downloadButton.style.display = 'none'; // Ocultar botón si es escritorio
+        qrContainer.style.display = 'block'; // Mostrar QR
+      }
+    });
+  </script>
 </body>
 </html>
 
