@@ -76,7 +76,7 @@
       <h2>Descripción</h2>
       <div class="description">
         <p>
-          NuevaRegistraApp es una aplicación diseñada para escanear y registrar tu asistencia utilizando un codigo QR, permitiendo la gestión de información en tiempo real.
+          RegistraApp es una aplicación diseñada para escanear y registrar tu asistencia utilizando un codigo QR, permitiendo la gestión de información en tiempo real.
         </p>
       </div>
     </section>
@@ -85,7 +85,7 @@
     <section class="section">
       <h2>Ficha Técnica</h2>
       <div class="technical-info">
-        <p><strong>Nombre del Proyecto:</strong> NuevaRegistraApp</p>
+        <p><strong>Nombre del Proyecto:</strong> RegistraApp</p>
         <p><strong>Tecnología Base:</strong> Ionic Framework con Capacitor</p>
         <p><strong>Plataforma de Destino:</strong> Android</p>
         <p><strong>Propósito:</strong> Escaneo y registro de códigos  QR para gestionar información en tiempo real.</p>
@@ -134,7 +134,7 @@
     // Mostrar botón o código QR
     document.addEventListener('DOMContentLoaded', () => {
       const downloadButton = document.getElementById('download-button');
-      const qrContainer = document.getElementById('images-container');
+      const qrContainer = document.getElementById('qr-container');
       
       if (isMobileDevice()) {
         qrContainer.style.display = 'none'; // Ocultar QR si es móvil
