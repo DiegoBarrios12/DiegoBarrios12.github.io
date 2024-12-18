@@ -118,9 +118,9 @@
       <h2>Descargar la Aplicación</h2>
       <p> usa el código QR para descargar tu apk:</p>
       <a href="nueva-registraap-apk/nueva_Registraapp.apk" class="button" download="NuevaRegistraApp.apk">Descargar APK</a>
-      <div id="qr-container"  class="images-container"> 
+      <div id="qrcontainer"  class="qrcontainer"> 
         <p>Escanea el código QR con tu dispositivo móvil:</p>
-        <img src="img/img registraap para la entrega/qrcode_149751128_a5d476ece54633acaa8c4e5f5b5f1bba.png" alt="Código QR para descargar el APK">
+        <img src="img/img registraap para la entrega/qrcode_149751128_a5d476ece54633acaa8c4e5f5b5f1bba.png" alt="Código QR para descargar el APK" width= 200,200>
       </div>
     </section>
     <!-- Descarga de la Aplicación -->
@@ -134,7 +134,7 @@
     // Mostrar botón o código QR
     document.addEventListener('DOMContentLoaded', () => {
       const downloadButton = document.getElementById('download-button');
-      const qrContainer = document.getElementById('qr-container');
+      const qrContainer = document.getElementById('qrcontainer');
       
       if (isMobileDevice()) {
         qrContainer.style.display = 'none'; // Ocultar QR si es móvil
